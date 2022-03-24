@@ -1,0 +1,9 @@
+server:
+  port: 8080
+  cloud:
+    gateway:
+      routes:
+        - id: games #identificador de la ruta
+          uri: http://localhost:8081 #url del redirect
+          predicates: #reglas de analisis del request
+            - Path=/games/** #path de url de request a considerar
