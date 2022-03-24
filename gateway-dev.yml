@@ -11,4 +11,4 @@ server:
         - id: games
           uri: lb://gamesLibrary
           predicates:
-            - Path=/games/**
+            - Path=/gamesLibrary/**
