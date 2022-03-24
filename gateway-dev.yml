@@ -5,9 +5,9 @@ server:
     gateway:
       routes:
         - id: library #identificador de la ruta
-          uri: lb://games #url del redirect
+          uri: lb://userLibrary #url del redirect
           predicates: #reglas de analisis del request
-            - Path=/library/** #path de url de request a considerar
+            - Path=/userLibrary/** #path de url de request a considerar
         - id: games
           uri: lb://gamesLibrary
           predicates:
