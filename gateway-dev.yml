@@ -5,10 +5,10 @@ server:
     gateway:
       routes:
         - id: library #identificador de la ruta
-          uri: lb://localhost:8081 #url del redirect
+          uri: lb://games #url del redirect
           predicates: #reglas de analisis del request
             - Path=/library/** #path de url de request a considerar
         - id: games
-          uri: lb://localhost:8082
+          uri: lb://gamesLibrary
           predicates:
             - Path=/games/**
