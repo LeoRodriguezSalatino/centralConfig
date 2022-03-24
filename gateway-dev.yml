@@ -3,7 +3,7 @@ server:
   cloud:
     gateway:
       routes:
-        - id: games #identificador de la ruta
+        - id: library #identificador de la ruta
           uri: http://localhost:8081 #url del redirect
           predicates: #reglas de analisis del request
-            - Path=/games/** #path de url de request a considerar
+            - Path=/library/** #path de url de request a considerar
