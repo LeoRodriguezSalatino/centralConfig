@@ -9,6 +9,6 @@ server:
           predicates: #reglas de analisis del request
             - Path=/userLibrary/** #path de url de request a considerar
         - id: games
-          uri: lb://gamesLibrary
+          uri: http://localhost:8082
           predicates:
             - Path=/gamesLibrary/**
